@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Rating</title>
+</head>
+<body>
+<form action="{{url_for('edit_rating', post_id=id)}}" method="post" novalidate>
+    <label>Give Your New Rating</label>
+    <input hidden="hidden" name="id" value="{{id}}">
+    <input name="review" type="text">
+    <button name="submit" type="submit">Update Rating</button>
+</form>
+</body>
+</html>
